@@ -22,13 +22,13 @@ def imageTransform():
     invertedblur = 255 - blur
 
     sketch = cv2.divide(grey_image, invertedblur, scale=256.0)
-    cv2.imwrite(f"C:\\Users\\Adrash\\Documents\\Python\\python_modules\\imageSketch\\Sketchs\\{name_value.get()}.png", sketch)
+    cv2.imwrite(f"\\{name_value.get()}.png", sketch)
 
     sbar.update()  #tkiter optimize the resources to save time so we have to give an update call to update a variable
     import time
     time.sleep(2)
     statusvar.set("Image is Saved")
-    os.system(f"C:\\Users\\Adrash\\Documents\\Python\\python_modules\\imageSketch\\Sketchs\\{name_value.get()}.png")
+    os.system(f"\\{name_value.get()}.png")
 # ----x------x------x-----x-----x
 
 
