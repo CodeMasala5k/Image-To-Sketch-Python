@@ -22,13 +22,13 @@ def imageTransform():
     invertedblur = 255 - blur
 
     sketch = cv2.divide(grey_image, invertedblur, scale=256.0)
-    cv2.imwrite(f"...File Path...\\{name_value.get()}.png", sketch) #give the path where you want to save the file
+    cv2.imwrite(f"Sketchs\\{name_value.get()}.png", sketch) 
 
     sbar.update()  #tkiter optimize the resources to save time so we have to give an update call to update a variable
     import time
     time.sleep(2)
     statusvar.set("Image is Saved")
-    os.system(f"...File Path...\\{name_value.get()}.png") #give the path where you want to save the file
+    os.system(f"Sketchs\\{name_value.get()}.png") #give the path where you want to save the file
 # ----x------x------x-----x-----x
 
 
