@@ -15,7 +15,7 @@ def imageTransform():
     statusvar.set("Uploading.....")
 
     image = cv2.imread(f"{img}")
-    grey_image = cv2.cvtColor(image, cv2.COLOR_BGR2GREY)
+    grey_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     inverted = 255 - grey_image
 
     blur = cv2.GaussianBlur(inverted,(21,21), 0)
